@@ -3,7 +3,7 @@ This project is a set of small test projects to perform experimental work in Obj
 
 While I may not be an expert architect *yet*, the focus is to experiment. Some of the stuff here will be shear genius, but mostly it will be me trying to reach a better understanding of how to write better, more maintainable iOS code.
 
-It is mostly an effort to unclutter your `UIViewController`s and sort of break the mold by providing examples of alternate code implementation methodologies.
+It is mostly an effort to unclutter the `UIViewController`s and sort of break the mold by providing examples of alternate code implementation methodologies.
 
 I will update this file later with resources (articles) that have inspired me and where I derived my ideas from.
 
