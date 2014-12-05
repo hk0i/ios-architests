@@ -79,8 +79,8 @@
                                     <constraint firstAttribute="width" constant="386" id="rEv-qU-e7b"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crj-Jp-dlz">
-                                <rect key="frame" x="107" y="259" width="65" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crj-Jp-dlz">
+                                <rect key="frame" x="267.5" y="259" width="65" height="30"/>
                                 <state key="normal" title="Calculate">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -91,9 +91,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="crj-Jp-dlz" firstAttribute="top" secondItem="dmq-SW-4aU" secondAttribute="bottom" constant="17" id="2a7-qz-oWc"/>
                             <constraint firstAttribute="centerY" secondItem="dmq-SW-4aU" secondAttribute="centerY" constant="118.5" id="7II-5f-xIk"/>
+                            <constraint firstItem="crj-Jp-dlz" firstAttribute="leading" secondItem="dmq-SW-4aU" secondAttribute="leading" id="U8G-CK-yw1"/>
                             <constraint firstAttribute="centerX" secondItem="dmq-SW-4aU" secondAttribute="centerX" id="d34-zW-6Im"/>
+                            <constraint firstItem="crj-Jp-dlz" firstAttribute="centerX" secondItem="dmq-SW-4aU" secondAttribute="centerX" id="jwW-da-VNT"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="U8G-CK-yw1"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="txtNewCPI" destination="SDy-Ly-2Wo" id="45u-cw-b0L"/>
