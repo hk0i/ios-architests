@@ -23,6 +23,9 @@
                                         <rect key="frame" x="90" y="38" width="97" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="textField_update:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Wb4-eR-6kM"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hjy-OZ-Jtd" userLabel="OldSens">
                                         <rect key="frame" x="205" y="37" width="97" height="30"/>
@@ -31,11 +34,17 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="textField_update:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="4XH-BU-cgR"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SDy-Ly-2Wo" userLabel="NewCPI">
                                         <rect key="frame" x="90" y="76" width="97" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="textField_update:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="f0q-V6-qfw"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tdw-58-2Qi" userLabel="NewSens">
                                         <rect key="frame" x="205" y="76" width="97" height="30"/>
@@ -45,25 +54,25 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Original" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wj1-jp-YCo">
                                         <rect key="frame" x="23" y="47" width="59" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWX-Wr-YN9">
                                         <rect key="frame" x="40" y="80" width="35" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPI" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCe-vr-HHq">
                                         <rect key="frame" x="90" y="9" width="28" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game &quot;Sensitivity&quot;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAk-En-ylI">
                                         <rect key="frame" x="205" y="8" width="143.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -80,8 +89,12 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crj-Jp-dlz">
-                                <rect key="frame" x="267.5" y="259" width="65" height="30"/>
+                                <rect key="frame" x="257.5" y="259" width="85" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="Q2W-3Z-uFB"/>
+                                </constraints>
                                 <state key="normal" title="Calculate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -104,10 +117,16 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="btnCalculate" destination="crj-Jp-dlz" id="lyL-K9-oWL"/>
+                        <outlet property="lblCPI" destination="tCe-vr-HHq" id="pad-Ap-7N1"/>
+                        <outlet property="lblNew" destination="oWX-Wr-YN9" id="d5R-ek-dCf"/>
+                        <outlet property="lblOriginal" destination="Wj1-jp-YCo" id="DbJ-Ac-5Fn"/>
+                        <outlet property="lblSensitivity" destination="EAk-En-ylI" id="Y7P-1V-m32"/>
                         <outlet property="txtNewCPI" destination="SDy-Ly-2Wo" id="45u-cw-b0L"/>
                         <outlet property="txtNewSensitivity" destination="tdw-58-2Qi" id="8ew-jf-W0m"/>
                         <outlet property="txtOriginalCPI" destination="QSK-to-f3v" id="GUn-KW-4b8"/>
                         <outlet property="txtOriginalSensitivity" destination="hjy-OZ-Jtd" id="soL-Nl-V2B"/>
+                        <outlet property="viwInputContainer" destination="dmq-SW-4aU" id="QJe-X5-pau"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

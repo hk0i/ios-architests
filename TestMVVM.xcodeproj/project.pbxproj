@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ED70EC211A316D7D00F4C630 /* CPICalcViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED70EC201A316D7D00F4C630 /* CPICalcViewModel.m */; };
+		ED70EC251A317B6A00F4C630 /* UIView+Shadows.m in Sources */ = {isa = PBXBuildFile; fileRef = ED70EC241A317B6A00F4C630 /* UIView+Shadows.m */; };
 		EDCB12891A315FD6006530EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCB12881A315FD6006530EE /* main.m */; };
 		EDCB128C1A315FD6006530EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCB128B1A315FD6006530EE /* AppDelegate.m */; };
 		EDCB128F1A315FD6006530EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCB128E1A315FD6006530EE /* ViewController.m */; };
@@ -32,6 +33,8 @@
 /* Begin PBXFileReference section */
 		ED70EC1F1A316D7D00F4C630 /* CPICalcViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPICalcViewModel.h; sourceTree = "<group>"; };
 		ED70EC201A316D7D00F4C630 /* CPICalcViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPICalcViewModel.m; sourceTree = "<group>"; };
+		ED70EC231A317B6A00F4C630 /* UIView+Shadows.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Shadows.h"; sourceTree = "<group>"; };
+		ED70EC241A317B6A00F4C630 /* UIView+Shadows.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shadows.m"; sourceTree = "<group>"; };
 		EDCB12831A315FD6006530EE /* TestMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCB12871A315FD6006530EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDCB12881A315FD6006530EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -88,6 +91,16 @@
 			path = viewmodel;
 			sourceTree = "<group>";
 		};
+		ED70EC221A317B5500F4C630 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				ED70EC231A317B6A00F4C630 /* UIView+Shadows.h */,
+				ED70EC241A317B6A00F4C630 /* UIView+Shadows.m */,
+			);
+			name = category;
+			path = classes/category;
+			sourceTree = "<group>";
+		};
 		EDCB127A1A315FD5006530EE = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +122,7 @@
 		EDCB12851A315FD6006530EE /* TestMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				ED70EC221A317B5500F4C630 /* category */,
 				ED70EC1D1A316D5600F4C630 /* cpicalc */,
 				EDCB12AF1A31609E006530EE /* base */,
 				EDCB128A1A315FD6006530EE /* AppDelegate.h */,
@@ -287,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED70EC211A316D7D00F4C630 /* CPICalcViewModel.m in Sources */,
+				ED70EC251A317B6A00F4C630 /* UIView+Shadows.m in Sources */,
 				EDCB12B51A3160B5006530EE /* MVVMViewController.m in Sources */,
 				EDCB12B91A316476006530EE /* MVVMViewModel.m in Sources */,
 				EDCB128F1A315FD6006530EE /* ViewController.m in Sources */,
