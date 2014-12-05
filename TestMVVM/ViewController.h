@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+@class MVVMViewController;
 
-@interface ViewController : UIViewController
-
+@interface ViewController : MVVMViewController
 
 @end
 
