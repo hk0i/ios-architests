@@ -56,11 +56,7 @@
     self.btnCalculate.backgroundColor = [UIColor colorWithRed:.8 green:.4 blue:.1 alpha:1];
     self.btnCalculate.layer.cornerRadius = 10;
     
-    self.view.backgroundColor = [UIColor
-                                 colorWithRed:.7
-                                 green:.3
-                                 blue:0
-                                 alpha:1];
+    self.view.backgroundColor = [UIColor blackColor];
 }
 
 - (void)setupBindings
