@@ -13,7 +13,7 @@
 
 @interface MVVMViewController : UIViewController <SynchronizeProtocol>
 /** list of properties that this view binds */
-@property (nonatomic, strong) NSMutableDictionary *properties;
+@property (nonatomic, strong) NSMutableDictionary *bindings;
 @property (nonatomic, strong) MVVMViewModel *viewModel;
 
 /** allows the binding of a UIView's value to a property */

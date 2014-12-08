@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.properties = [NSMutableDictionary new];
+    self.bindings = [NSMutableDictionary new];
     self.viewModel = [MVVMViewModel new];
     
     //set up ui components and styles.
@@ -42,15 +42,15 @@
 - (void)bindView:(UIView *)view toProperty:(NSString *)property
 {
     if (property.length && view) {
-        self.properties[property] = view;
+        self.bindings[property] = view;
     }
 }
 
 - (void)synchronize:(NSDictionary *)data
 {
-    NSArray *keys = self.properties.allKeys;
+    NSArray *keys = self.bindings.allKeys;
     for (int i = 0; i < keys.count; ++i) {
-        [self updateUiElement:self.properties[keys[i]]
+        [self updateUiElement:self.bindings[keys[i]]
                      withData:data[keys[i]]];
     }
 }
@@ -65,9 +65,9 @@
 - (NSDictionary *)data
 {
     NSMutableDictionary *boundData = [NSMutableDictionary new];
-    NSArray *keys = self.properties.allKeys;
-    for (int i = 0; i < self.properties.count; ++i) {
-        UIView *view = self.properties[keys[i]];
+    NSArray *keys = self.bindings.allKeys;
+    for (int i = 0; i < self.bindings.count; ++i) {
+        UIView *view = self.bindings[keys[i]];
         if ([view respondsToSelector:@selector(text)]) {
             boundData[keys[i]] = [view valueForKey:@"text"];
         }

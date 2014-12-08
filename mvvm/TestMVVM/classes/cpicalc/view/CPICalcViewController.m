@@ -67,7 +67,7 @@
     [self bindView:self.txtNewCPI toProperty:@"newCPI"];
     [self bindView:self.txtNewSensitivity toProperty:@"newSensitivity"];
     
-    NSLog(@"Set up data bindings: %@", self.properties);
+    NSLog(@"Set up data bindings: %@", self.bindings);
 }
 
 - (IBAction)btnCalculate_tapped:(UIButton *)sender {
