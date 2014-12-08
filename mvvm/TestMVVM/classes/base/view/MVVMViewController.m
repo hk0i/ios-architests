@@ -62,7 +62,7 @@
     }
 }
 
-- (NSDictionary *)data
+- (NSDictionary *)viewData
 {
     NSMutableDictionary *boundData = [NSMutableDictionary new];
     NSArray *keys = self.bindings.allKeys;
@@ -78,7 +78,7 @@
 
 - (void)update
 {
-    [self.viewModel synchronize:self.data];
+    [self.viewModel synchronize:self.viewData];
     [self synchronize:self.viewModel.preparedData];
 }
 
