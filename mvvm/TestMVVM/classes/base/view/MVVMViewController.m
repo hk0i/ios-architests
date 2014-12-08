@@ -29,10 +29,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)synchronize:(NSDictionary *)data {
-    [self subclassException:_cmd];
-}
-
 - (void)setupUi
 {
     [self subclassException:_cmd];
@@ -50,13 +46,12 @@
     }
 }
 
-- (void)setPreparedData:(NSDictionary *)preparedData
+- (void)synchronize:(NSDictionary *)data
 {
-    _preparedData = preparedData;
     NSArray *keys = self.properties.allKeys;
     for (int i = 0; i < keys.count; ++i) {
         [self updateUiElement:self.properties[keys[i]]
-                     withData:preparedData[keys[i]]];
+                     withData:data[keys[i]]];
     }
 }
 
@@ -84,7 +79,7 @@
 - (void)update
 {
     [self.viewModel synchronize:self.data];
-    self.preparedData = self.viewModel.preparedData;
+    [self synchronize:self.viewModel.preparedData];
 }
 
 @end
