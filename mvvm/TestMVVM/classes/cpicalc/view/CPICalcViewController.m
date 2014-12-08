@@ -8,10 +8,10 @@
 
 #import "MVVMViewController.h"
 #import "CPICalcViewModel.h"
-#import "ViewController.h"
+#import "CPICalcViewController.h"
 #import "UIView+Shadows.h"
 
-@interface ViewController ()
+@interface CPICalcViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *txtOriginalCPI;
 @property (weak, nonatomic) IBOutlet UITextField *txtOriginalSensitivity;
 @property (weak, nonatomic) IBOutlet UITextField *txtNewCPI;
@@ -27,7 +27,7 @@
 
 @end
 
-@implementation ViewController
+@implementation CPICalcViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

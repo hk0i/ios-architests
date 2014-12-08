@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 @class MVVMViewController;
 
-@interface ViewController : MVVMViewController
+@interface CPICalcViewController : MVVMViewController
 
 @end
 
